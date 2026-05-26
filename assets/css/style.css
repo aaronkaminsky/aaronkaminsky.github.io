@@ -81,9 +81,6 @@ h1, h2, h3, h4 {
   font-size: 1.35rem;
   color: var(--text-primary);
   text-decoration: none;
-  background: linear-gradient(135deg, var(--text-primary) 30%, var(--accent-cyan));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   transition: var(--transition-smooth);
 }
 
@@ -142,9 +139,7 @@ main {
   font-size: 3rem;
   line-height: 1.15;
   margin-bottom: 0.5rem;
-  background: linear-gradient(to right, #ffffff, #e2e8f0, var(--accent-cyan));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--text-primary);
 }
 
 .hero .tagline {
@@ -221,6 +216,10 @@ section h2::after {
   line-height: 1.7;
 }
 
+.philosophy-box p + p {
+  margin-top: 1rem;
+}
+
 .philosophy-box p strong {
   color: var(--text-primary);
 }
@@ -245,7 +244,6 @@ section h2::after {
 
 .domain-tag:hover {
   background: rgba(56, 189, 248, 0.15);
-  transform: translateY(-2px);
 }
 
 /* Values Grid */
@@ -274,10 +272,8 @@ section h2::after {
 }
 
 .value-card:hover {
-  transform: translateY(-4px);
   border-color: var(--border-focus);
   background: var(--card-hover-bg);
-  box-shadow: 0 10px 25px -5px rgba(56, 189, 248, 0.1);
 }
 
 .value-card h3 {
@@ -400,7 +396,6 @@ section h2::after {
 }
 
 .hobby-card:hover {
-  transform: translateY(-2px);
   border-color: var(--border-focus);
   background: var(--card-hover-bg);
 }

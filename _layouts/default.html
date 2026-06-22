@@ -11,15 +11,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
-<body class="{% if page.minimal %}layout-minimal{% endif %}"{% if page.minimal %} style="--hero-bg: url('{{ '/assets/images/foggy_sunrise_hero.jpg' | relative_url }}')"{% endif %}>
-  {% unless page.minimal %}
-    {% include header.html %}
-  {% endunless %}
+<body class="layout-minimal" style="--hero-bg: url('{{ '/assets/images/foggy_sunrise_hero.jpg' | relative_url }}')">
   <main>
     {{ content }}
   </main>
-  {% unless page.minimal %}
-    {% include footer.html %}
-  {% endunless %}
 </body>
 </html>

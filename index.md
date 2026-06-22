@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Home
-minimal: true
 ---
 
 <div class="glass-card">

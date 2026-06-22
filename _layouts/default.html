@@ -5,17 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
   <meta name="description" content="{{ site.description }}">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%2338bdf8%22>◇</text></svg>">
+  <link rel="icon" type="image/png" href="{{ '/assets/images/favicon.png' | relative_url }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
-<body>
-  {% include header.html %}
+<body class="{% if page.minimal %}layout-minimal{% endif %}"{% if page.minimal %} style="--hero-bg: url('{{ '/assets/images/foggy_sunrise_hero.jpg' | relative_url }}')"{% endif %}>
+  {% unless page.minimal %}
+    {% include header.html %}
+  {% endunless %}
   <main>
     {{ content }}
   </main>
-  {% include footer.html %}
+  {% unless page.minimal %}
+    {% include footer.html %}
+  {% endunless %}
 </body>
 </html>

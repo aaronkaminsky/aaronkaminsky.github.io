@@ -1,0 +1,12 @@
+# Jekyll configuration
+title: Aaron Kaminsky
+description: Technical Architect | Enterprise Software Systems, SaaS, Financial Planning & Data Analytics
+url: "https://foggysunrise.xyz"
+baseurl: ""
+markdown: kramdown
+highlighter: rouge
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md

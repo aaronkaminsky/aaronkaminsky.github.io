@@ -553,9 +553,9 @@ body.layout-minimal main {
 
 /* Glass Card styling for minimal layout */
 .glass-card {
-  background: rgba(10, 14, 23, 0.45);
-  backdrop-filter: blur(20px) saturate(120%);
-  -webkit-backdrop-filter: blur(20px) saturate(120%);
+  background: rgba(10, 14, 23, 0.25);
+  backdrop-filter: blur(12px) saturate(140%);
+  -webkit-backdrop-filter: blur(12px) saturate(140%);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 20px;
   padding: 3.5rem 3rem;
@@ -593,6 +593,7 @@ body.layout-minimal main {
   border-left: none; /* remove default blockquote border */
   padding: 0;
   margin: 0;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
 }
 
 .glass-card .quote-author {
@@ -601,16 +602,18 @@ body.layout-minimal main {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  color: var(--text-secondary);
+  color: #c7d2e0;
   margin-top: 0.75rem;
   text-align: right;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
 }
 
 .glass-card .intro {
   font-size: 1rem;
-  color: var(--text-secondary);
+  color: #c7d2e0;
   line-height: 1.65;
   margin: 0;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
 }
 
 .glass-card .minimal-links {
@@ -644,8 +647,9 @@ body.layout-minimal main {
 
 .glass-card .btn.secondary {
   border: 1px solid rgba(255, 255, 255, 0.15);
-  color: var(--text-secondary);
+  color: #c7d2e0;
   background-color: rgba(255, 255, 255, 0.02);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
 }
 
 .glass-card .btn.secondary:hover {
@@ -666,7 +670,8 @@ body.layout-minimal main {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  color: var(--text-muted);
+  color: #aab6c6;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
 }
 
 .glass-card .card-separator {
